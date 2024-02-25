@@ -16,27 +16,27 @@ body {
 }
 
 .btn-login {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
   padding: 10px 12px;
   border-radius: 5px;
-  color: #404040;
+  color: #404040 !important;
 }
 
 .btn-login:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 .link-recuperacao {
   text-decoration: none;
-  color: var(--color-primary)
+  color: var(--color-primary) !important;
 }
 
 .link-recuperacao:hover {
   text-decoration: underline;
+  color: var(--color-primary) !important;
 }
 
 .form-control:focus {
-  
   border-color: var(--color-primary);
   outline: 0;
   box-shadow: 0 0 0 0.25rem var(--color-primary);

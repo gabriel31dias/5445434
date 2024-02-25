@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/styles.css">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link  rel="shortcut icon" />
     <title>Consultores</title>
-</head>
-<body>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="q6nx6MjtnruHgMRwgL7EV/a6QJAKyF1VasiPmG8yRyFBQOOWRIAtA3zDlZdbEJ/Zb74jQNc4m+jZp4dz63ysrg==" /><link rel="stylesheet" media="all" href="./assets/boot.vendor.css" />
+    <link rel="stylesheet" media="all" href="./assets/init_consultant.css" />
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body class="gray-bg">
+    <div class="container m-t">
+      <div class="row text-center loginscreen animated fadeInDown">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="ibox-content m-b">
+            <h1 class="logo">
+              <img style="height: auto;max-width: 100%;margin-bottom: 20px;"  src="./assets/logo.png" />
+            </h1>
 
-<div class="login-container">
-    <h2 class="text-center my-4"><img src="./assets/logo.png" alt="Logo W1"></h2>
-    <p class="fs-6 fw-bold text-center my-4">Painel do consultor</p>
-    <form>
-      <div class="input-group input-group-lg mb-3">
-        <span class="input-group-text" id="addon-wrapping"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <input type="text" class="form-control" placeholder="Usuário" aria-label="username" aria-describedby="addon-wrapping">
+            <h3 class="mb-3">
+              Painel do consultor
+            </h3>
+            <form class="simple_form " id="new_consultant_person" data-parsley-validate="" novalidate="novalidate" action="/painel-consultor/entrar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+              <input type="hidden" name="authenticity_token" value="DgQnjOMZJGuMI6oy0NpqP5JheE+HE9WXb6gQG6NQWSDi2cF1B4hYPxDAahMwCtdeNQmMF/1g5/8Zmv+7RgIqQg==" />
+              <div class="login-form">
+                <div class="form-group email optional consultant_person_email">
+                  <div id="email-handler" class="input-group">
+                <span class="input-group-addon"><i class='fa fa-user  fa-fw'                ></i></span>
+                <input required="required" autofocus="autofocus" class="string email required form-control" parsley-trigger="change" data-parsley-errors-messages-disabled="true" data-parsley-class-handler="#email-handler" aria-required="true" placeholder="Email" type="email" value="" name="consultant_person[email]" id="consultant_person_email" />
+              </div></div>
+              <div class="form-group password optional consultant_person_password"><div id="password-handler" class="input-group"><span class="input-group-addon"><i class='fa fa-lock  fa-fw'                ></i></span>
+                <input required="required" class="password required form-control" parsley-trigger="change" data-parsley-errors-messages-disabled="true" data-parsley-class-handler="#password-handler" aria-required="true" placeholder="Senha" type="password" name="consultant_person[password]" id="consultant_person_password" />
+              </div></div>
+              <div class="form-group login-submit">
+                <input type="submit" name="commit" value="Logar" class="btn btn btn-primary btn-login block full-width m-b cpy-login-button" data-disable-with="Logar" />
+              </div>
+              <a class="link-recuperacao" href="/painel-consultor/senha/new">
+                Esqueceu a senha ou primeiro acesso?</a>
+            </div></form>
+          </div>
+        </div>
       </div>
-
-      <div class="input-group input-group-lg mb-3">
-        <span class="input-group-text" id="addon-wrapping"><i class="fa fa-lock" aria-hidden="true"></i>
-        </span>
-        <input type="password" class="form-control" placeholder="Senha" aria-label="password" aria-describedby="addon-wrapping">
-      </div>
-
-        <button type="submit" class="btn btn-login w-100">Logar</button>
-
-        <p class="fs-6 my-3 text-center"><a class="link-recuperacao" href="#">Esqueceu a senha ou primeiro acesso?</a></p>
-    </form>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>
