@@ -7,11 +7,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f8f9fa;
+  background-color: #eee;
 }
 
 .login-container {
-  max-width: 400px;
+  max-width: 400px !important;
   width: 100%;
 }
 

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  background-image: url('./Rectangle\ 5.png');
+  background-size: contain; /* Isso faz com que a imagem cubra todo o corpo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-attachment: fixed; /* Mantém a imagem fixa enquanto a página rola */
+  background-position: right;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo, .error {
+  padding: 40px 44px;
+
+.title-error {
+  text-align: center;
+  color: #fff;
+  font-size: 200px;
+  margin: 20px 0;
+}
+
+.paragraph-error, .link-error {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.link-error {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-error:hover {
+  text-decoration: underline;
+}
